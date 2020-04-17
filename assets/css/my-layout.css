@@ -1,3 +1,48 @@
+/*  colors  */
+.bg-primary {
+  background: : #429489;
+}
+.bg-lightblue {
+  background: #9fd8f9:
+}
+.bg-gray {
+  background: #b1b1b1;
+}
+
+.bg-lightgray {
+  background: #eaeaea;
+}
+
+.col-primary {
+  color: #429489;
+}
+
+.col-lightblue {
+  color: #9fd8f9;
+}
+
+.col-gray {
+  color: #b1b1b1;
+}
+
+/* font size */
+.font-size-x-small {
+  font-size: .7em;
+}
+
+.font-size-small {
+  font-size: 1em;
+}
+
+.font-size-medium {
+  font-size: 1.5em;
+}
+
+.font-size-large {
+  font-size: 2em;
+}
+
+/* layout */
 .app {
   width: 80%;
   min-width: 800px;
@@ -6,8 +51,7 @@
   display: flex;
 }
 
-
-.app .left-sidebar {
+.app .sidebar {
   width: 35%;
   height: 100%;
   background: red;
@@ -17,4 +61,38 @@
   width: 65%;
   height: 100%;
   background: blue;
+}
+
+.app .sidebar .header-sidebar {
+  display: flex;
+  height: 100px;
+  padding: 10px;
+}
+
+.app .sidebar .header-sidebar .your-photo {
+  width: 20%;
+  height: 100%;
+}
+
+.app .sidebar .header-sidebar .your-photo img {
+  width: 70px;
+  border-radius: 50px;
+}
+
+.app .sidebar .header-sidebar .your-icons {
+  height: 100px;
+  width: 80%;
+  padding-top: 25px;
+}
+
+.app .sidebar .header-sidebar .your-icons .list-icon {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.app .sidebar .header-sidebar .your-icons .list-icon li {
+  list-style: none;
+  padding: 0px 15px;
+  cursor: pointer;
 }

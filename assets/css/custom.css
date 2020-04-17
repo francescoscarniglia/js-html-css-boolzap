@@ -7,21 +7,25 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
 
 body {
-<<<<<<< HEAD
   font-family: 'Lato', sans-serif;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Lato', sans-serif;
   background-image: linear-gradient(to bottom,
                                    #429489 0px, /*partenza gradient*/
                                    #429489 15vh, /* fino a...gradient*/
                                    #dcdbd3 15vh, /* partenza gradient */
                                    #dcdbd3 100vh /* fino a...gradient*/
                                    );
+}
 
-=======
-  
-  font-family: 'Lato', sans-serif;
->>>>>>> master
+img {
+  max-width: 100%
+}
+
+
+.list-icon li .fas:hover {
+  opacity: .9;
 }

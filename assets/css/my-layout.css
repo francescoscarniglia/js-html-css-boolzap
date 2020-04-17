@@ -55,6 +55,8 @@
   width: 35%;
   height: 100%;
   background: red;
+  display: flex;
+  flex-direction: column;
 }
 
 .app .content {
@@ -95,4 +97,9 @@
   list-style: none;
   padding: 0px 15px;
   cursor: pointer;
+}
+
+.app .sidebar .sidebar-content {
+  flex-grow: 1;
+  background:yellow;
 }

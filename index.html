@@ -4,10 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-
-  <link rel="stylesheet" href="assets/css/my-layout.css">
-
-
+  <link rel="stylesheet" href="assets/css/my-utilities.css">
   <link rel="stylesheet" href="assets/css/custom.css">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Boolzap | Francesco Scarniglia</title>
@@ -16,24 +13,169 @@
 
 
 <div class="app">
-  <div class="sidebar">
-  <div class="header-sidebar bg-lightgray">
-    <div class="your-photo">
-      <img src="assets/img/avatar_io.jpg" alt="your img">
-    </div><!-- your-foto -->
-    <div class="your-icons">
-      <ul class="list-icon col-gray font-size-medium">
-        <li><i class="fas fa-spinner"></i></li>
-        <li><i class="fas fa-comment-alt"></i></li>
-        <li><i class="fas fa-ellipsis-v"></i></li>
-      </ul>
-    </div><!-- your-icons -->
-  </div>
-  <div class="sidebar-content">
+  <!--- *****************************************************
+   *************************SIDEBAR *************************
+ ************************************************************-->
 
-  </div><!-- sidebar-content -->
+  <div class="sidebar">
+    <div class="header-sidebar bg-lightgray padding-top">
+      <div class="your-photo">
+        <img src="assets/img/avatar_io.jpg" alt="your img">
+      </div><!-- your-foto -->
+      <div class="your-icons">
+        <ul class="list-icon col-gray font-size-medium">
+          <li><i class="fas fa-spinner"></i></li>
+          <li><i class="fas fa-comment-alt"></i></li>
+          <li><i class="fas fa-ellipsis-v"></i></li>
+        </ul>
+      </div><!-- your-icons -->
+    </div> <!-- header-sidebar -->
+    <div class="sidebar-content">
+
+<!--- ************** BOX NOTIFICATION **************** -->
+      <div class="box-notification flex-start bg-lightblue padding-general">
+        <div class="bell-box centered">
+          <i class="fas fa-bell-slash col-lightblue font-size-large"></i>
+        </div><!-- bell -->
+        <div class="bell-text margin-left-t">
+        <p class="font-bold font-size-18">Ricevi notifiche di nuovi messaggi</p>
+        <a class="font-size-small col-link font-bold" href="#!">Attiva notifiche desktop</a>
+        </div><!-- bell-text -->
+      </div><!-- notification -->
+
+<!--- ************** BOX SEARCH ********************** -->
+      <div class="box-search padding-10 bg-gray-alpha">
+          <input type="text" placeholder=" Cerca o inizia una nuova chat" class="search-input border bg-white padding-search font-size-small">
+        </div><!-- box-search -->
+
+<!--- ************** BOX CONVERSATION **************** -->
+
+      <div class="box-conversation flex-between padding-general active">
+        <div class="your-photo padding-conversation-img">
+          <img src="assets/img/avatar_1.jpg" alt="your img">
+        </div><!-- your-foto -->
+        <div class="conversation-review align-it-center">
+          <p class="font-weight-semi-bold">Francesco</p>
+          <p class="excerpt col-gray">
+            Ciao
+          </p>
+        </div><!-- conversation-review -->
+        <div class="conversation-time relative">
+          <p class="absolute-time col-gray">11.10</p>
+        </div><!-- conversation-time -->
+      </div><!-- conversation-box -->
+
+      <div class="box-conversation flex-between padding-general">
+        <div class="your-photo padding-conversation-img">
+          <img src="assets/img/avatar_2.jpg" alt="your img">
+        </div><!-- your-foto -->
+        <div class="conversation-review align-it-center">
+          <p class="font-weight-semi-bold">Luigi</p>
+          <p class="excerpt col-gray">
+            Ciao
+          </p>
+        </div><!-- conversation-review -->
+        <div class="conversation-time relative">
+          <p class="absolute-time col-gray">11.10</p>
+        </div><!-- conversation-time -->
+      </div><!-- conversation-box -->
+
+      <div class="box-conversation flex-between padding-general">
+        <div class="your-photo padding-conversation-img">
+          <img src="assets/img/avatar_3.jpg" alt="your img">
+        </div><!-- your-foto -->
+        <div class="conversation-review align-it-center">
+          <p class="font-weight-semi-bold">Gianluca</p>
+          <p class="excerpt col-gray">
+            Ciao
+          </p>
+        </div><!-- conversation-review -->
+        <div class="conversation-time relative">
+          <p class="absolute-time col-gray">11.10</p>
+        </div><!-- conversation-time -->
+      </div><!-- conversation-box -->
+
+      <div class="box-conversation flex-between padding-general">
+        <div class="your-photo padding-conversation-img">
+          <img src="assets/img/avatar_4.jpg" alt="your img">
+        </div><!-- your-foto -->
+        <div class="conversation-review align-it-center">
+          <p class="font-weight-semi-bold">Giuseppe</p>
+          <p class="excerpt col-gray">
+            Ciao
+          </p>
+        </div><!-- conversation-review -->
+        <div class="conversation-time relative">
+          <p class="absolute-time col-gray">11.10</p>
+        </div><!-- conversation-time -->
+      </div><!-- conversation-box -->
+
+      <div class="box-conversation flex-between padding-general">
+        <div class="your-photo padding-conversation-img">
+          <img src="assets/img/avatar_5.jpg" alt="your img">
+        </div><!-- your-foto -->
+        <div class="conversation-review align-it-center">
+          <p class="font-weight-semi-bold">Pierluigi</p>
+          <p class="excerpt col-gray">
+            Ciao
+          </p>
+        </div><!-- conversation-review -->
+        <div class="conversation-time relative">
+          <p class="absolute-time col-gray">11.10</p>
+        </div><!-- conversation-time -->
+      </div><!-- conversation-box -->
+
+      <div class="box-conversation flex-between padding-general">
+        <div class="your-photo padding-conversation-img">
+          <img src="assets/img/avatar_6.jpg" alt="your img">
+        </div><!-- your-foto -->
+        <div class="conversation-review align-it-center">
+          <p class="font-weight-semi-bold">Laura</p>
+          <p class="excerpt col-gray">
+            Ciao
+          </p>
+        </div><!-- conversation-review -->
+        <div class="conversation-time relative">
+          <p class="absolute-time col-gray">11.10</p>
+        </div><!-- conversation-time -->
+      </div><!-- conversation-box -->
+
+      <div class="box-conversation flex-between padding-general">
+        <div class="your-photo padding-conversation-img">
+          <img src="assets/img/avatar_7.jpg" alt="your img">
+        </div><!-- your-foto -->
+        <div class="conversation-review align-it-center">
+          <p class="font-weight-semi-bold">Francesco</p>
+          <p class="excerpt col-gray">
+            Ciao
+          </p>
+        </div><!-- conversation-review -->
+        <div class="conversation-time relative">
+          <p class="absolute-time col-gray">11.10</p>
+        </div><!-- conversation-time -->
+      </div><!-- conversation-box -->
+
+      <div class="box-conversation flex-between padding-general">
+        <div class="your-photo padding-conversation-img">
+          <img src="assets/img/avatar_8.jpg" alt="your img">
+        </div><!-- your-foto -->
+        <div class="conversation-review align-it-center">
+          <p class="font-weight-semi-bold">Francesco</p>
+          <p class="excerpt col-gray">
+            Ciao
+          </p>
+        </div><!-- conversation-review -->
+        <div class="conversation-time relative">
+          <p class="absolute-time col-gray">11.10</p>
+        </div><!-- conversation-time -->
+      </div><!-- conversation-box -->
+
+    </div><!-- sidebar-content -->
 </div><!-- sidebar -->
 
+<!--- *****************************************************
+ ************************* CONTENT *************************
+************************************************************-->
   <div class="content">
 
   </div><!-- content -->

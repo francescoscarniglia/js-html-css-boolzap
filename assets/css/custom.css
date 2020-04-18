@@ -25,7 +25,114 @@ img {
   max-width: 100%
 }
 
+/****************** box notification **************/
+.box-notification {
+  height: 110px;
+  width: 100%;
+}
 
-.list-icon li .fas:hover {
+/************************* layout general  ************************/
+.app {
+  width: 80%;
+  min-width: 800px;
+  height: 95%;
+  background: #fff;
+  display: flex;
+}
+
+.app .content {
+  width: 65%;
+  height: 100%;
+  background: blue;
+}
+
+/**************************  sidebar ***************************/
+
+.app .sidebar {
+  width: 35%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.app .sidebar .header-sidebar {
+  display: flex;
+  height: 100px;
+}
+
+.app .sidebar .header-sidebar .your-photo {
+  width: 20%;
+  height: 100%;
+}
+
+.app .sidebar img {
+  width: 70px;
+  border-radius: 50px;
+}
+
+.app .sidebar .header-sidebar .your-icons {
+  height: 100px;
+  width: 80%;
+  padding-top: 25px;
+}
+
+.app .sidebar .header-sidebar .your-icons .list-icon {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.app .sidebar .header-sidebar .your-icons .list-icon li {
+  list-style: none;
+  padding: 0px 15px;
+  cursor: pointer;
+}
+
+.app .sidebar .header-sidebar .your-icons .list-icon li .fas:hover {
   opacity: .9;
+}
+
+.app .sidebar .sidebar-content {
+  flex-grow: 1;
+  background:white;
+  overflow-x: auto;
+}
+
+
+/********** box notification  in sidebar ***************/
+
+.app .sidebar-content .box-notification .bell-box {
+  background: #fff;
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+}
+
+.app .sidebar-content .box-search .search-input {
+  width: 100%;
+  font-family: FontAwesome;
+  text-indent: 60px;
+  outline: none;
+}
+
+/********** conversation ***************/
+
+.app .sidebar-content .box-conversation {
+  border-bottom: .5px solid rgba(0,0,0, .2);
+}
+
+.app .sidebar-content .box-conversation:last-child {
+  border-bottom: none;
+}
+
+
+.app .sidebar-content .box-conversation .conversation-review {
+  flex-grow: 1;
+}
+
+
+.app .sidebar-content .box-conversation.active
+{
+  background: rgba(234,235,235,1);
+
 }

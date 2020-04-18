@@ -40,7 +40,7 @@ img {
   display: flex;
 }
 
-.app .content {
+.app .content-conversation {
   width: 65%;
   height: 100%;
   background: blue;
@@ -115,7 +115,7 @@ img {
   outline: none;
 }
 
-/********** conversation ***************/
+/********** sidebar - conversation ***************/
 
 .app .sidebar-content .box-conversation {
   border-bottom: .5px solid rgba(0,0,0, .2);
@@ -134,5 +134,14 @@ img {
 .app .sidebar-content .box-conversation.active
 {
   background: rgba(234,235,235,1);
+}
 
+/********** CONTENT CONVERSATION ***************/
+.app .content-conversation .header-conversation {
+  background: red;
+  height: 100px;
+}
+
+.app .content-conversation .main-conversation {
+  background: yellow;
 }

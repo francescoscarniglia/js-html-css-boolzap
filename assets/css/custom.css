@@ -103,7 +103,7 @@ img {
 }
 
 /***********************************************
-*************  box notification in sidebaf *******
+*************  box notification in sidebar *******
 *********************************************** */
 
 .app .sidebar-content .box-notification .bell-box {
@@ -115,7 +115,7 @@ img {
 
 .app .sidebar-content .box-search .search-input {
   width: 100%;
-  font-family: FontAwesome;
+  font-family: FontAwesome, 'Lato', sans-serif;
   text-indent: 60px;
   outline: none;
 }
@@ -180,7 +180,7 @@ img {
   width: auto;
   max-width: 50%;
   min-width: 50%;
-  min-height:30px;
+  min-height: 30px;
   float: right;
 }
 
@@ -209,25 +209,38 @@ img {
   position: absolute;
   right: 10px;
   bottom: 8px;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 
 /***********************************************
 *************  writing message specific  *******
 *********************************************** */
-
-.app .content-conversation .writing-message .writing-favicon {
-  width: 60px;
+.app .content-conversation .writing-message .record-message i.fas.active {
+  display: block;
 }
 
-.app .content-conversation .writing-message .writing-message {
+.app .content-conversation .writing-message .record-message i.fas {
+  display: none;
+}
 
-  background: yellow;
+.app .content-conversation .writing-message .writing-favicon {
+  width: 80px;
+}
+
+.app .content-conversation .writing-message .input-message {
+  width: 100%;
+  font-family: FontAwesome, 'Lato', sans-serif;;
+  text-indent: 20px;
+  outline: none;
 }
 
 .app .content-conversation .writing-message .record-message {
   width: 60px;
 }
+
+
 
 
 /**************************************************************

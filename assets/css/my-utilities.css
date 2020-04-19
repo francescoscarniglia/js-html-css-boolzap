@@ -58,6 +58,11 @@
 .font-size-18 {
   font-size: 18px;
 }
+
+.font-size-x-medium {
+  font-size: 1.3em;
+}
+
 .font-size-medium {
   font-size: 1.5em;
 }

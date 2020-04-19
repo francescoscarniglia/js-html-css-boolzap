@@ -169,12 +169,13 @@ img {
   width: auto;
   max-width: 50%;
   min-height:30px;
-  
+
 }
 
 .app .content-conversation .main-conversation .your-reply-message .reply-message {
   width: auto;
   max-width: 50%;
+  min-width: 50%;
   min-height:30px;
   background: green;
   float: right;
@@ -183,6 +184,7 @@ img {
 .app .content-conversation .main-conversation .your-reply-message .reply-message .reply-text {
 
   float: right;
+
 }
 
 .app .content-conversation .main-conversation .reply-message .reply-text {

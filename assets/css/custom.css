@@ -169,7 +169,7 @@ img {
   width: auto;
   max-width: 50%;
   min-height:30px;
-  background: yellow;
+  
 }
 
 .app .content-conversation .main-conversation .your-reply-message .reply-message {
@@ -195,7 +195,7 @@ img {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   -o-border-radius: 10px;
-  background: blue;
+  background: #fff;
 
 }
 

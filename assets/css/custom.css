@@ -169,7 +169,35 @@ img {
 *************  display single conversation *******
 *********************************************** */
 
+.app .main-conversation .message-list {
 
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+
+}
+
+.app .main-conversation li {
+  max-width: 400px;
+}
+
+.app .main-conversation li.friends-message  {
+  padding:20px;
+  margin: 10px;
+  background: #fff;
+  border-radius: 10px;
+  list-style: none;
+  align-self: flex-start;
+}
+
+.app .main-conversation li.your-message {
+  padding:20px;
+  margin: 10px;
+  background: #dcf8c0;
+  border-radius: 10px;
+  list-style: none;
+  align-self: flex-end;
+}
 
 
 /***********************************************

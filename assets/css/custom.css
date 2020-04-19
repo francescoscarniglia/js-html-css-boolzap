@@ -143,13 +143,70 @@ img {
 }
 
 .app .content-conversation .main-conversation {
-  background: yellow;
-  overflow-y: scroll;
+  overflow-y: auto;
+  background: url('../img/mine.jpg');
 }
+
+
+/***********************************************
+*************  display single conversation *******
+*********************************************** */
+
 
 /*********** writing-message *********************/
 
 .app .content-conversation .writing-message {
   background: green;
   height: 70px;
+}
+
+.app .content-conversation .main-conversation .friends-reply-message {
+  background: transparent;
+
+}
+
+.app .content-conversation .main-conversation .friends-reply-message .reply-message {
+  width: auto;
+  max-width: 50%;
+  min-height:30px;
+  background: yellow;
+}
+
+.app .content-conversation .main-conversation .your-reply-message .reply-message {
+  width: auto;
+  max-width: 50%;
+  min-height:30px;
+  background: green;
+  float: right;
+}
+
+.app .content-conversation .main-conversation .your-reply-message .reply-message .reply-text {
+
+  float: right;
+}
+
+.app .content-conversation .main-conversation .reply-message .reply-text {
+  width: auto;
+  height: auto;
+  min-height: 50px;
+  max-width: 80%;
+  position: relative;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  background: blue;
+
+}
+
+.app .content-conversation .main-conversation .time-to-reply {
+  text-align: right;
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+}
+
+
+.clearfix {
+  clear: both;
 }

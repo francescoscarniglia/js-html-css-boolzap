@@ -96,9 +96,22 @@
   padding-right: 20px;
 }
 
+.padding-reply {
+  padding: 10px 5px 10px 10px;
+}
+
 /* margin */
 .margin-left-t{
   margin-left: 15px;
+}
+
+.margin-single-message {
+  margin: 10px 0px 10px 15px;
+
+}
+
+.margin-10 {
+  margin: 10px;
 }
 
 .padding-search {
@@ -116,6 +129,12 @@
 .flex-start {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -142,4 +161,10 @@
   position: absolute;
   bottom: 10px;
   right: 0;
+}
+
+.absolute-time-reply {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }

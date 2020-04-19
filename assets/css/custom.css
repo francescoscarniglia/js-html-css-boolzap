@@ -177,20 +177,19 @@ img {
   max-width: 50%;
   min-width: 50%;
   min-height:30px;
-  background: green;
   float: right;
 }
 
 .app .content-conversation .main-conversation .your-reply-message .reply-message .reply-text {
 
   float: right;
-
+  background: #dcf8c0;
 }
 
 .app .content-conversation .main-conversation .reply-message .reply-text {
   width: auto;
   height: auto;
-  min-height: 50px;
+  min-height: 70px;
   max-width: 80%;
   position: relative;
   border-radius: 10px;

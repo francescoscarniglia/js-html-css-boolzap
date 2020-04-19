@@ -21,32 +21,36 @@ body {
                                    );
 }
 
-img {
-  max-width: 100%
-}
 
-/****************** box notification **************/
-.box-notification {
-  height: 110px;
-  width: 100%;
-}
+/***********************************************
+*************  LAYOUT GENERAL *******
+*********************************************** */
 
-/************************* layout general  ************************/
 .app {
   width: 80%;
   min-width: 800px;
   height: 95%;
-  background: #fff;
   display: flex;
 }
 
 .app .content-conversation {
   width: 65%;
   height: 100%;
-  background: blue;
+
 }
 
-/**************************  sidebar ***************************/
+.box-notification {
+  height: 110px;
+  width: 100%;
+}
+
+img {
+  max-width: 100%
+}
+
+/***********************************************
+******************  SIDEBAR ********************
+*********************************************** */
 
 .app .sidebar {
   width: 35%;
@@ -99,8 +103,9 @@ img {
   overflow-x: auto;
 }
 
-
-/********** box notification  in sidebar ***************/
+/***********************************************
+*************  box notification in sidebaf *******
+*********************************************** */
 
 .app .sidebar-content .box-notification .bell-box {
   background: #fff;
@@ -116,7 +121,10 @@ img {
   outline: none;
 }
 
-/********** sidebar - conversation ***************/
+
+/***********************************************
+*************  sidebar-conversation *************
+*********************************************** */
 
 .app .sidebar-content .box-conversation {
   border-bottom: .5px solid rgba(0,0,0, .2);
@@ -137,7 +145,10 @@ img {
   background: rgba(234,235,235,1);
 }
 
-/********** CONTENT CONVERSATION ***************/
+/***********************************************
+*************  content-conversation *******
+*********************************************** */
+
 .app .content-conversation .header-conversation {
   height: 100px;
 }
@@ -147,13 +158,9 @@ img {
   background: url('../img/mine.jpg');
 }
 
-
 /***********************************************
-*************  display single conversation *******
+*************  writing message *******
 *********************************************** */
-
-
-/*********** writing-message *********************/
 
 .app .content-conversation .writing-message {
   background: green;
@@ -164,6 +171,10 @@ img {
   background: transparent;
 
 }
+
+/***********************************************
+*************  display single conversation *******
+*********************************************** */
 
 .app .content-conversation .main-conversation .friends-reply-message .reply-message {
   width: auto;
@@ -207,7 +218,14 @@ img {
   bottom: 5px;
 }
 
-
 .clearfix {
   clear: both;
+}
+
+/**************************************************************
+************************ TEMPLATE *****************************
+*************************************************************** */
+
+.template {
+  display: none; /*segue jQuery */
 }

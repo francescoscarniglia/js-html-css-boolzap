@@ -21,7 +21,6 @@ body {
                                    );
 }
 
-
 /***********************************************
 *************  LAYOUT GENERAL *******
 *********************************************** */
@@ -146,7 +145,7 @@ img {
 }
 
 /***********************************************
-*************  content-conversation *******
+*************  layout content-conversation *****
 *********************************************** */
 
 .app .content-conversation .header-conversation {
@@ -159,17 +158,12 @@ img {
 }
 
 /***********************************************
-*************  writing message *******
+*************  writing message layout  *******
 *********************************************** */
 
 .app .content-conversation .writing-message {
-  background: green;
+  background: #f2eeeb;
   height: 70px;
-}
-
-.app .content-conversation .main-conversation .friends-reply-message {
-  background: transparent;
-
 }
 
 /***********************************************
@@ -215,12 +209,27 @@ img {
   text-align: right;
   position: absolute;
   right: 10px;
-  bottom: 5px;
+  bottom: 8px;
 }
 
-.clearfix {
-  clear: both;
+
+/***********************************************
+*************  writing message specific  *******
+*********************************************** */
+
+.app .content-conversation .writing-message .writing-favicon {
+  background: orange;
 }
+
+.app .content-conversation .writing-message .writing-message {
+  
+  background: yellow;
+}
+
+.app .content-conversation .writing-message .record-message {
+  background: blue;
+}
+
 
 /**************************************************************
 ************************ TEMPLATE *****************************

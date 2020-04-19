@@ -66,29 +66,30 @@ img {
   height: 100%;
 }
 
-.app .sidebar img {
+.app .sidebar img,
+.app .content-conversation img {
   width: 70px;
   border-radius: 50px;
 }
 
-.app .sidebar .header-sidebar .your-icons {
+.app .your-icons {
   height: 100px;
   width: 80%;
   padding-top: 25px;
 }
 
-.app .sidebar .header-sidebar .your-icons .list-icon {
+.app .your-icons .list-icon {
   display: flex;
   justify-content: flex-end;
 }
 
-.app .sidebar .header-sidebar .your-icons .list-icon li {
+.app .your-icons .list-icon li {
   list-style: none;
   padding: 0px 15px;
   cursor: pointer;
 }
 
-.app .sidebar .header-sidebar .your-icons .list-icon li .fas:hover {
+.app  .your-icons .list-icon li .fas:hover {
   opacity: .9;
 }
 
@@ -138,10 +139,17 @@ img {
 
 /********** CONTENT CONVERSATION ***************/
 .app .content-conversation .header-conversation {
-  background: red;
   height: 100px;
 }
 
 .app .content-conversation .main-conversation {
   background: yellow;
+  overflow-y: scroll;
+}
+
+/*********** writing-message *********************/
+
+.app .content-conversation .writing-message {
+  background: green;
+  height: 70px;
 }

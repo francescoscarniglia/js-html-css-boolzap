@@ -13,9 +13,11 @@
 
 
 <div class="app">
-  <!--- *****************************************************
-   *************************SIDEBAR *************************
- ************************************************************-->
+
+
+<!--- ***********************************************************
+********************** SIDEBAR **********************************
+**************************************************************-->
 
   <div class="sidebar">
     <div class="header-sidebar bg-lightgray padding-top">
@@ -32,7 +34,10 @@
     </div> <!-- header-sidebar -->
     <div class="sidebar-content">
 
-<!--- ************** BOX NOTIFICATION **************** -->
+<!--- ***********************************************************
+********************** BOX NOTIFICATION *************************
+**************************************************************-->
+
       <div class="box-notification flex-start bg-lightblue padding-general">
         <div class="bell-box centered">
           <i class="fas fa-bell-slash col-lightblue font-size-large"></i>
@@ -43,12 +48,18 @@
         </div><!-- bell-text -->
       </div><!-- notification -->
 
-<!--- ************** BOX SEARCH ********************** -->
+
+<!--- *****************************************************
+**************** BOX SEARCH *******************************
+************************************************************-->
+
       <div class="box-search padding-10 bg-gray-alpha">
           <input type="text" placeholder=" Cerca o inizia una nuova chat" class="search-input border bg-white padding-search font-size-small">
         </div><!-- box-search -->
 
-<!--- ************** BOX CONVERSATION **************** -->
+<!--- *****************************************************
+**************** BOX CONVERSATION**************************
+************************************************************-->
 
       <div class="box-conversation flex-between padding-general active">
         <div class="your-photo padding-conversation-img">
@@ -174,8 +185,9 @@
 </div><!-- sidebar -->
 
 <!--- *****************************************************
- ************************* CONTENT CONVERSATION *************************
+**************** DISPLAY SINGLE CONVERSATION *************
 ************************************************************-->
+
   <div class="content-conversation flex-column">
 
     <div class="header-conversation bg-lightgray border-left flex-between padding-general">
@@ -250,16 +262,7 @@
 
         <div class="reply-message margin-single-message">
           <div class="reply-text padding-20">
-            Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione &copy; lipsum.com
-            <span class="time-to-reply col-gray">
-              11:00
-            </span><!-- time-to-reply -->
-          </div> <!-- reply-text -->
-        </div><!-- reply-message -->
-
-        <div class="reply-message margin-single-message">
-          <div class="reply-text padding-20">
-            Lorem ipsum dolor sit amet.
+            Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione. &copy; lipsum.com
             <span class="time-to-reply col-gray">
               11:00
             </span><!-- time-to-reply -->
@@ -268,21 +271,41 @@
 
       </div><!-- your-reply-message -->
 
-
-
-
-
     </div><!-- main-content -->
 
-    <div class="writing-message">
-      scivi messaggio
+<!--- *****************************************************
+********************* WRITING MESSAGE **********************
+************************************************************-->
+
+    <div class="writing-message flex-around padding-10">
+
+      <div class="writing-favicon col-gray text-center">
+        <i class="far fa-smile fa-2x"></i>
+      </div><!-- writing-favicon -->
+
+      <div class="writing-message flex-grow-1 padding-10 margin-writing">
+      message here
+      </div><!-- writing-message -->
+
+      <div class="record-message col-dark-gray text-center">
+        <i class="fas fa-microphone fa-2x"></i>
+      </div><!-- record-message -->
+
     </div><!-- writing-message -->
   </div><!-- content -->
 </div><!-- app -->
 
 
-
-
+<div class="template">
+    <div class="reply-message margin-single-message">
+      <div class="reply-text padding-20">
+      ciao
+        <span class="time-to-reply col-dark-gray">
+      11.00
+        </span><!-- time-to-reply -->
+      </div> <!-- reply-text -->
+    </div><!-- reply-message -->
+</div><!-- template -->
 
 
 <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js">

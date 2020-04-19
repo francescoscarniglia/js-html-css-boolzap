@@ -1,5 +1,5 @@
 /*******************************************************************
-******************* UTILITIES ***************************
+*******************  MY UTILITIES ***********************************
 ********************************************************************/
 
 /************************  colors *********************************/
@@ -38,10 +38,16 @@
   color: #b1b1b1;
 }
 
+.col-dark-gray {
+  color: #6d7376;
+}
+
 .col-link {
   color: #577383;
 }
+
 /****************** font propriety ***************/
+
 .font-size-x-small {
   font-size: .7em;
 }
@@ -68,7 +74,12 @@
   font-weight: 600;
 }
 
+.text-center {
+  text-align: center;
+}
+
 /*********** border *******************************/
+
 .border {
   border: 1px solid rgba(0,0,0, .2);
 }
@@ -78,6 +89,7 @@
 }
 
 /**************  padding  ******************/
+
 .padding-general {
   padding: 5px 10px 0px 40px;
 }
@@ -106,12 +118,15 @@
 }
 
 .margin-single-message {
-  margin: 10px 0px 10px 15px;
-
+  margin: 10px 0px 0px 15px;
 }
 
 .margin-10 {
-  margin: 10px;
+  margin: 10px 10px 0px;
+}
+
+.margin-writing {
+  margin: 0px 20px 0px;
 }
 
 .padding-search {
@@ -119,6 +134,11 @@
 }
 
 /************ DISPLAY AND POSITION  ********************/
+
+.clearfix {
+  clear: both;
+}
+
 .centered {
   display: flex;
   flex-direction: column;
@@ -141,6 +161,12 @@
 .flex-between {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.flex-around {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 

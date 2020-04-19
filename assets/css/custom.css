@@ -163,7 +163,6 @@ img {
 
 .app .content-conversation .writing-message {
   background: #f2eeeb;
-  height: 70px;
 }
 
 /***********************************************
@@ -218,16 +217,16 @@ img {
 *********************************************** */
 
 .app .content-conversation .writing-message .writing-favicon {
-  background: orange;
+  width: 60px;
 }
 
 .app .content-conversation .writing-message .writing-message {
-  
+
   background: yellow;
 }
 
 .app .content-conversation .writing-message .record-message {
-  background: blue;
+  width: 60px;
 }
 
 

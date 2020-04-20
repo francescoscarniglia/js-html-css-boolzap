@@ -237,11 +237,6 @@ body {
 *************  writing message specific  *******
 *********************************************** */
 
-.app .content-conversation .writing-message .record-message i.fa-paper-plane {
-  display: none;
-}
-
-
 .app .content-conversation .writing-message .writing-favicon {
   width: 80px;
 }

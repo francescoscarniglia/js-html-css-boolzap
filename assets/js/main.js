@@ -6,8 +6,8 @@ $(document).ready(function(){
 
   // Show send message icon on message input focus
 
-  messageInput.on('focus blur', function() {
-      sendIcon.toggleClass('fas fa-microphone fas fa-paper-plane');
+  messageInput.on('focus blur', function(){
+    sendIcon.toggleClass('fa-microphone fa-paper-plane')
   });
 
   sendIcon.click(function(){

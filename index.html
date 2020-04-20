@@ -25,161 +25,179 @@
         <img src="assets/img/avatar_io.jpg" alt="your img">
       </div><!-- your-foto -->
       <div class="your-icons">
-        <ul class="list-icon col-gray font-size-medium">
-          <li><i class="fas fa-spinner"></i></li>
-          <li><i class="fas fa-comment-alt"></i></li>
-          <li><i class="fas fa-ellipsis-v"></i></li>
+        <ul class="list-icon font-size-medium">
+          <li><a href="#!"><i class="fas fa-circle-notch"></i></a></li>
+          <li><a href="#!"><i class="fas fa-comment-alt"></i></a></li>
+          <li><a href="#!"><i class="fas fa-ellipsis-v"></i></a></li>
         </ul>
       </div><!-- your-icons -->
     </div> <!-- header-sidebar -->
+
+
+<!--- ***********************************************************
+********************** SIDEBAR-CONTENT *************************
+**************************************************************-->
+
     <div class="sidebar-content">
 
 <!--- ***********************************************************
 ********************** BOX NOTIFICATION *************************
 **************************************************************-->
 
-      <div class="box-notification flex-start bg-lightblue padding-general">
-        <div class="bell-box centered">
-          <i class="fas fa-bell-slash col-lightblue font-size-large"></i>
-        </div><!-- bell -->
-        <div class="bell-text margin-left-t">
-        <p class="font-bold font-size-18">Ricevi notifiche di nuovi messaggi</p>
-        <a class="font-size-small col-link font-bold" href="#!">Attiva notifiche desktop</a>
-        </div><!-- bell-text -->
-      </div><!-- notification -->
+        <div class="box-notification flex-start bg-lightblue padding-general">
+          <div class="bell-box centered">
+            <i class="fas fa-bell-slash col-lightblue font-size-large"></i>
+          </div><!-- bell -->
+          <div class="bell-text margin-left-t">
+          <p class="font-bold font-size-18">Ricevi notifiche di nuovi messaggi</p>
+          <a class="font-size-small col-link font-bold" href="#!">Attiva notifiche desktop</a>
+          </div><!-- bell-text -->
+        </div><!-- notification -->
 
 
 <!--- *****************************************************
 **************** BOX SEARCH *******************************
 ************************************************************-->
 
-      <div class="box-search padding-10 bg-gray-alpha">
-          <input type="text" placeholder=" Cerca o inizia una nuova chat" class="search-input border bg-white padding-search font-size-small">
-        </div><!-- box-search -->
+        <div class="box-search">
+
+          <label for="search-input" class="search-label">
+            <i class="fa fa-search"></i>
+          </label>
+
+            <input type="text" id="search-input"
+                               name="search"
+                              placeholder="Cerca o inizia una nuova chat"
+            >
+
+
+
+            <!-- <input type="text" placeholder=" Cerca o inizia una nuova chat" class="search-input border bg-white padding-search font-size-small"> -->
+          </div><!-- box-search -->
 
 <!--- *****************************************************
 **************** BOX CONVERSATION**************************
 ************************************************************-->
 
-      <div class="box-conversation flex-between padding-general active">
-        <div class="your-photo padding-conversation-img">
-          <img src="assets/img/avatar_1.jpg" alt="your img">
-        </div><!-- your-foto -->
-        <div class="conversation-review align-it-center">
-          <p class="font-weight-semi-bold">Giuseppe</p>
-          <p class="excerpt col-gray">
-            Ciao Francesco, il sito mi piace...
-          </p>
-        </div><!-- conversation-review -->
-        <div class="conversation-time relative">
-          <p class="absolute-time col-gray">11.10</p>
-        </div><!-- conversation-time -->
-      </div><!-- conversation-box -->
+        <div class="box-conversation flex-between padding-general active" data-conversation='0'>
+          <div class="your-photo padding-conversation-img">
+            <img src="assets/img/avatar_1.jpg" alt="your img">
+          </div><!-- your-foto -->
+          <div class="conversation-review align-it-center">
+            <p class="font-weight-semi-bold">Giuseppe</p>
+            <p class="excerpt col-gray">
+              Ciao Francesco, il sito mi piace...
+            </p>
+          </div><!-- conversation-review -->
+          <div class="conversation-time relative">
+            <p class="absolute-time col-gray">11.10</p>
+          </div><!-- conversation-time -->
+        </div><!-- conversation-box -->
 
-      <div class="box-conversation flex-between padding-general">
-        <div class="your-photo padding-conversation-img">
-          <img src="assets/img/avatar_2.jpg" alt="your img">
-        </div><!-- your-foto -->
-        <div class="conversation-review align-it-center">
-          <p class="font-weight-semi-bold">Luigi</p>
-          <p class="excerpt col-gray">
-            Ciao
-          </p>
-        </div><!-- conversation-review -->
-        <div class="conversation-time relative">
-          <p class="absolute-time col-gray">11.10</p>
-        </div><!-- conversation-time -->
-      </div><!-- conversation-box -->
+        <div class="box-conversation flex-between padding-general" data-conversation='1'>
+          <div class="your-photo padding-conversation-img">
+            <img src="assets/img/avatar_2.jpg" alt="your img">
+          </div><!-- your-foto -->
+          <div class="conversation-review align-it-center">
+            <p class="font-weight-semi-bold">Luigi</p>
+            <p class="excerpt col-gray">
+              Ciao
+            </p>
+          </div><!-- conversation-review -->
+          <div class="conversation-time relative">
+            <p class="absolute-time col-gray">11.10</p>
+          </div><!-- conversation-time -->
+        </div><!-- conversation-box -->
 
-      <div class="box-conversation flex-between padding-general">
-        <div class="your-photo padding-conversation-img">
-          <img src="assets/img/avatar_3.jpg" alt="your img">
-        </div><!-- your-foto -->
-        <div class="conversation-review align-it-center">
-          <p class="font-weight-semi-bold">Gianluca</p>
-          <p class="excerpt col-gray">
-            Ciao
-          </p>
-        </div><!-- conversation-review -->
-        <div class="conversation-time relative">
-          <p class="absolute-time col-gray">11.10</p>
-        </div><!-- conversation-time -->
-      </div><!-- conversation-box -->
+        <div class="box-conversation flex-between padding-general" data-conversation='2'>
+          <div class="your-photo padding-conversation-img">
+            <img src="assets/img/avatar_3.jpg" alt="your img">
+          </div><!-- your-foto -->
+          <div class="conversation-review align-it-center">
+            <p class="font-weight-semi-bold">Gianluca</p>
+            <p class="excerpt col-gray">
+              Ciao
+            </p>
+          </div><!-- conversation-review -->
+          <div class="conversation-time relative">
+            <p class="absolute-time col-gray">11.10</p>
+          </div><!-- conversation-time -->
+        </div><!-- conversation-box -->
 
-      <div class="box-conversation flex-between padding-general">
-        <div class="your-photo padding-conversation-img">
-          <img src="assets/img/avatar_4.jpg" alt="your img">
-        </div><!-- your-foto -->
-        <div class="conversation-review align-it-center">
-          <p class="font-weight-semi-bold">Giuseppe</p>
-          <p class="excerpt col-gray">
-            Ciao
-          </p>
-        </div><!-- conversation-review -->
-        <div class="conversation-time relative">
-          <p class="absolute-time col-gray">11.10</p>
-        </div><!-- conversation-time -->
-      </div><!-- conversation-box -->
+        <div class="box-conversation flex-between padding-general" data-conversation='3'>
+          <div class="your-photo padding-conversation-img">
+            <img src="assets/img/avatar_4.jpg" alt="your img">
+          </div><!-- your-foto -->
+          <div class="conversation-review align-it-center">
+            <p class="font-weight-semi-bold">Giuseppe</p>
+            <p class="excerpt col-gray">
+              Ciao
+            </p>
+          </div><!-- conversation-review -->
+          <div class="conversation-time relative">
+            <p class="absolute-time col-gray">11.10</p>
+          </div><!-- conversation-time -->
+        </div><!-- conversation-box -->
 
-      <div class="box-conversation flex-between padding-general">
-        <div class="your-photo padding-conversation-img">
-          <img src="assets/img/avatar_5.jpg" alt="your img">
-        </div><!-- your-foto -->
-        <div class="conversation-review align-it-center">
-          <p class="font-weight-semi-bold">Pierluigi</p>
-          <p class="excerpt col-gray">
-            Ciao
-          </p>
-        </div><!-- conversation-review -->
-        <div class="conversation-time relative">
-          <p class="absolute-time col-gray">11.10</p>
-        </div><!-- conversation-time -->
-      </div><!-- conversation-box -->
+        <div class="box-conversation flex-between padding-general" data-conversation='4'>
+          <div class="your-photo padding-conversation-img">
+            <img src="assets/img/avatar_5.jpg" alt="your img">
+          </div><!-- your-foto -->
+          <div class="conversation-review align-it-center">
+            <p class="font-weight-semi-bold">Pierluigi</p>
+            <p class="excerpt col-gray">
+              Ciao
+            </p>
+          </div><!-- conversation-review -->
+          <div class="conversation-time relative">
+            <p class="absolute-time col-gray">11.10</p>
+          </div><!-- conversation-time -->
+        </div><!-- conversation-box -->
 
-      <div class="box-conversation flex-between padding-general">
-        <div class="your-photo padding-conversation-img">
-          <img src="assets/img/avatar_6.jpg" alt="your img">
-        </div><!-- your-foto -->
-        <div class="conversation-review align-it-center">
-          <p class="font-weight-semi-bold">Laura</p>
-          <p class="excerpt col-gray">
-            Ciao
-          </p>
-        </div><!-- conversation-review -->
-        <div class="conversation-time relative">
-          <p class="absolute-time col-gray">11.10</p>
-        </div><!-- conversation-time -->
-      </div><!-- conversation-box -->
+        <div class="box-conversation flex-between padding-general" data-conversation='5'>
+          <div class="your-photo padding-conversation-img">
+            <img src="assets/img/avatar_6.jpg" alt="your img">
+          </div><!-- your-foto -->
+          <div class="conversation-review align-it-center">
+            <p class="font-weight-semi-bold">Laura</p>
+            <p class="excerpt col-gray">
+              Ciao
+            </p>
+          </div><!-- conversation-review -->
+          <div class="conversation-time relative">
+            <p class="absolute-time col-gray">11.10</p>
+          </div><!-- conversation-time -->
+        </div><!-- conversation-box -->
 
-      <div class="box-conversation flex-between padding-general">
-        <div class="your-photo padding-conversation-img">
-          <img src="assets/img/avatar_7.jpg" alt="your img">
-        </div><!-- your-foto -->
-        <div class="conversation-review align-it-center">
-          <p class="font-weight-semi-bold">Francesco</p>
-          <p class="excerpt col-gray">
-            Ciao
-          </p>
-        </div><!-- conversation-review -->
-        <div class="conversation-time relative">
-          <p class="absolute-time col-gray">11.10</p>
-        </div><!-- conversation-time -->
-      </div><!-- conversation-box -->
+        <div class="box-conversation flex-between padding-general" data-conversation='6'>
+          <div class="your-photo padding-conversation-img">
+            <img src="assets/img/avatar_7.jpg" alt="your img">
+          </div><!-- your-foto -->
+          <div class="conversation-review align-it-center">
+            <p class="font-weight-semi-bold">Francesco</p>
+            <p class="excerpt col-gray">
+              Ciao
+            </p>
+          </div><!-- conversation-review -->
+          <div class="conversation-time relative">
+            <p class="absolute-time col-gray">11.10</p>
+          </div><!-- conversation-time -->
+        </div><!-- conversation-box -->
 
-      <div class="box-conversation flex-between padding-general">
-        <div class="your-photo padding-conversation-img">
-          <img src="assets/img/avatar_8.jpg" alt="your img">
-        </div><!-- your-foto -->
-        <div class="flex-grow conversation-review align-it-center">
-          <p class="font-weight-semi-bold">Francesco</p>
-          <p class="excerpt col-gray">
-            Ciao
-          </p>
-        </div><!-- conversation-review -->
-        <div class="conversation-time relative">
-          <p class="absolute-time col-gray">11.10</p>
-        </div><!-- conversation-time -->
-      </div><!-- conversation-box -->
+        <div class="box-conversation flex-between padding-general" data-conversation='7'>
+          <div class="your-photo padding-conversation-img">
+            <img src="assets/img/avatar_8.jpg" alt="your img">
+          </div><!-- your-foto -->
+          <div class="flex-grow conversation-review align-it-center">
+            <p class="font-weight-semi-bold">Francesco</p>
+            <p class="excerpt col-gray">
+              Ciao
+            </p>
+          </div><!-- conversation-review -->
+          <div class="conversation-time relative">
+            <p class="absolute-time col-gray">11.10</p>
+          </div><!-- conversation-time -->
+        </div><!-- conversation-box -->
 
     </div><!-- sidebar-content -->
   </div><!-- sidebar -->
@@ -190,12 +208,12 @@
 
   <div class="content-conversation flex-column">
 
-    <div class="header-conversation bg-lightgray border-left flex-between padding-general">
+    <div class="header-conversation bg-lightgray border-left flex-between padding-general" data-conversation='0'>
       <div class="your-photo padding-conversation-img">
         <img src="assets/img/avatar_1.jpg" alt="your img">
       </div><!-- your-foto -->
 
-    <div class="last-access ">
+    <div class="last-access">
       <p class="font-weight-semi-bold">Giuseppe</p>
       <p class="excerpt col-gray">
         Ultimo accesso oggi alle 11.20
@@ -203,10 +221,10 @@
     </div><!-- last-access -->
 
     <div class="your-icons">
-      <ul class="list-icon col-gray font-size-medium">
-        <li><i class="fas fa-search"></i></li>
-        <li><i class="fas fa-paperclip"></i></li>
-        <li><i class="fas fa-ellipsis-v"></i></li>
+      <ul class="list-icon font-size-medium">
+        <li><a href="#!"><i class="fas fa-search"></i></a></li>
+        <li><a href="#!"><i class="fas fa-paperclip"></i></a></li>
+        <li><a href="#!"><i class="fas fa-ellipsis-v"></i></a></li>
       </ul>
     </div><!-- your-icons -->
 
@@ -220,9 +238,19 @@
       <div class="conversation">
 
       <ul class="message-list padding-20">
-        <li class="friends-message"> Ciao Francesco</li>
-        <li class="your-message">Ciao</li>
-        <li class="friends-message">Come stai?</li>
+        <li class="friends-message relative">
+          <span class="text-message">Ciao Frascesco lorem</span>
+          <span class="absolute-time"> 11.00</span>
+        </li>
+        <li class="your-message relative">
+          <span class="text-message">Ciao Frascesco lorem</span>
+          <span class="absolute-time"> 11.00</span>
+        </li>
+
+        <li class="friends-message relative">
+          <span class="text-message">Ciao Frascesco lorem</span>
+          <span class="absolute-time"> 11.00</span>
+        </li>
 
       </ul><!-- friends-message-list -->
 

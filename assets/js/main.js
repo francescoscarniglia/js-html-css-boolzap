@@ -4,6 +4,8 @@ $(document).ready(function(){
 
   var conversation = $('.conversation .message-list');
 
+
+
   // aggiunta di un nuovo elemento list-item
   $('.input-message').keyup(function(e) {
       if(e.which === 13 || e.keyCode === 13) {

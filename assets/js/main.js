@@ -36,7 +36,7 @@ function sendMessage (input) {
   // clone template
   var nuovoMessaggio = $('.template .your-message').clone();
 
-  // aggiunta testo messaggio e tempo
+  // aggiunta testo messaggio e orario di invio mex
   nuovoMessaggio.children('.text-message').text(testoMessaggio);
 
 
@@ -69,6 +69,16 @@ function addZero(numero){
 }
 
 //setTimmeout
-function replyMessage() {
-  alert("Compare 1 secondo dopo invio di un messaggio altrimenti non va bene");
+function replyMessage(messageFriend) {
+  //alert("Compare 1 secondo dopo invio di un messaggio altrimenti non va bene");
+  // clone template
+  var nuovoMessaggio = $('.template .friends-message').clone();
+  var textReply = nuovoMessaggio.text();
+
+  // Aggiunta nuovo messaggio al contenitore messaggi attivo
+  nuovoMessaggio.children('.text-message').text(textReply);
+
+  // aggiunta testo messaggio e orario di invio mex
+  $('.conversation .message-list').append(nuovoMessaggio);
+    console.log('risposta: ', textReply);
 }

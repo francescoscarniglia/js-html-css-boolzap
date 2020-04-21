@@ -40,12 +40,7 @@ function sendMessage (input) {
   nuovoMessaggio.children('.text-message').text(testoMessaggio);
 
 
-  // creo
-
-  var data = new Date();
-  var ora = addZero(data.getHours() );
-  var minuti = addZero(data.getMinutes() );
-  var orario = ora + ':' + minuti;
+var orario = oraAttuale();
 
   nuovoMessaggio.children('.absolute-time').text(orario);
 
@@ -79,10 +74,7 @@ function replyMessage(messageFriend) {
   // Aggiunta nuovo messaggio al contenitore messaggi attivo
   nuovoMessaggio.children('.text-message').text(textReply);
 
-  var data = new Date();
-  var ora = addZero(data.getHours() );
-  var minuti = addZero(data.getMinutes() );
-  var orario = ora + ':' + minuti;
+  var orario = oraAttuale();
 
   nuovoMessaggio.children('.absolute-time').text(orario);
 
@@ -90,3 +82,13 @@ function replyMessage(messageFriend) {
   $('.conversation .message-list').append(nuovoMessaggio);
     console.log('risposta: ', textReply);
 }
+
+
+// genero ora attuale per riutilizzo
+function oraAttuale(){
+  var data = new Date();
+  var ora = addZero(data.getHours() );
+  var minuti = addZero(data.getMinutes() );
+  var orario = ora + ':' + minuti;
+  return orario;
+};

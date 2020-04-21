@@ -71,12 +71,20 @@ function addZero(numero){
 //setTimmeout
 function replyMessage(messageFriend) {
   //alert("Compare 1 secondo dopo invio di un messaggio altrimenti non va bene");
+
   // clone template
   var nuovoMessaggio = $('.template .friends-message').clone();
   var textReply = nuovoMessaggio.text();
 
   // Aggiunta nuovo messaggio al contenitore messaggi attivo
   nuovoMessaggio.children('.text-message').text(textReply);
+
+  var data = new Date();
+  var ora = addZero(data.getHours() );
+  var minuti = addZero(data.getMinutes() );
+  var orario = ora + ':' + minuti;
+
+  nuovoMessaggio.children('.absolute-time').text(orario);
 
   // aggiunta testo messaggio e orario di invio mex
   $('.conversation .message-list').append(nuovoMessaggio);

@@ -41,7 +41,7 @@ function sendMessage (input) {
   nuovoMessaggio.children('.text-message').text(testoMessaggio);
 
 
-var orario = oraAttuale();
+  var orario = oraAttuale();
 
   nuovoMessaggio.children('.absolute-time').text(orario);
 
@@ -51,6 +51,12 @@ var orario = oraAttuale();
   //reply message setTimeout
   setTimeout(replyMessage, 1000);
   // reset input messaggio
+
+  //change time in last-access from my friend
+  timeNow = $('.time-now');
+  timeNow.text(orario);
+  // nuovoMessaggio.children('.absolute-time').text(orario);
+
   input.val('');
 
   }

@@ -36,17 +36,32 @@ function sendMessage (input) {
   // clone template
   var nuovoMessaggio = $('.template .your-message').clone();
 
-  // aggiunta testo messaggio
-  nuovoMessaggio.children('.message-list li.text-message').text(testoMessaggio);
+  // aggiunta testo messaggio e tempo
+  nuovoMessaggio.children('.text-message').text(testoMessaggio);
 
-  // Aggiungi classe sent (inviata dall'utente)
-  nuovoMessaggio.addClass('relative');
 
+  // creo
+
+  var data = new Date();
+  var ora = addZero(data.getHours() );
+  var minuti = addZero(data.getMinutes() );
+  var orario = ora + ':' + minuti;
+
+  nuovoMessaggio.children('.absolute-time').text(orario);
+  
   // Aggiunta nuovo messaggio al contenitore messaggi attivo
-  $('.message-list').append(nuovoMessaggio);
+  $('.conversation .message-list').append(nuovoMessaggio);
 
   // reset input messaggio
   input.val('');
 
   }
+}
+
+// aggiunta 0 prima del numero se minore di 10 (ex 09)
+function addZero(numero){
+  if(numero < 10 ) {
+    numero = '0' + numero;
+   }
+   return numero;
 }

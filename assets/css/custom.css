@@ -109,9 +109,9 @@ body {
 
 .app .sidebar-content .box-notification .bell-box {
   background: #fff;
-  height: 70px;
   width: 70px;
   border-radius: 50px;
+  padding: 20px;
 }
 
 .app .sidebar-content .box-search {

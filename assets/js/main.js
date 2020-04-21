@@ -59,6 +59,9 @@ function sendMessage (input) {
 
   input.val('');
 
+  // scroll
+  scrollMessaggio();
+
   }
 }
 
@@ -88,6 +91,9 @@ function replyMessage(messageFriend) {
   // aggiunta testo messaggio e orario di invio mex
   $('.conversation .message-list').append(nuovoMessaggio);
     console.log('risposta: ', textReply);
+
+  // scroll
+  scrollMessaggio();
 }
 
 
@@ -98,4 +104,19 @@ function oraAttuale(){
   var minuti = addZero(data.getMinutes() );
   var orario = ora + ':' + minuti;
   return orario;
+};
+
+// scroll all'ultimo messaggio
+
+function scrollMessaggio(){
+  // prima cosa che serve: prendere il contenitore
+  // attivo della convrsazione ed ottenere la sua altezza
+  // metodo jQuery che mi ritorna altezza height()
+
+  pixelScroll = $('.message-list.active').height();
+
+  $('.main-conversation').animate({
+    scrollTop: pixelScroll
+  }, 500);
+
 };

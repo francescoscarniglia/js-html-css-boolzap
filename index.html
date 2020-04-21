@@ -11,9 +11,11 @@
 </head>
 <body>
 
+<!--- ***********************************************************
+********************** APP **********************************
+**************************************************************-->
 
 <div class="app">
-
 
 <!--- ***********************************************************
 ********************** SIDEBAR **********************************
@@ -70,10 +72,7 @@
                               placeholder="Cerca o inizia una nuova chat"
             >
 
-
-
-            <!-- <input type="text" placeholder=" Cerca o inizia una nuova chat" class="search-input border bg-white padding-search font-size-small"> -->
-          </div><!-- box-search -->
+        </div><!-- box-search -->
 
 <!--- *****************************************************
 **************** BOX CONVERSATION**************************
@@ -237,9 +236,26 @@
 
       <div class="conversation">
 
-      <ul class="message-list active padding-20">
+      <ul class="message-list active  padding-20" data-conversation:"0">
         <li class="friends-message relative">
           <span class="text-message">Ciao</span>
+          <span class="absolute-time"> 11.00</span>
+        </li>
+        <li class="your-message relative">
+          <span class="text-message">Ciao</span>
+          <span class="absolute-time"> 11.00</span>
+        </li>
+
+        <li class="friends-message relative">
+          <span class="text-message">Come stai?</span>
+          <span class="absolute-time"> 11.00</span>
+        </li>
+
+      </ul><!-- friends-message-list -->
+
+      <ul class="message-list padding-20" data-conversation:"0">
+        <li class="friends-message relative">
+          <span class="text-message">Ciao seconda conversazione</span>
           <span class="absolute-time"> 11.00</span>
         </li>
         <li class="your-message relative">
@@ -296,13 +312,15 @@
     </li>
 </div><!-- template -->
 
-
+<!-- ***********************************************
+********************** SCRIPT **********************
+************************************************ -->
 
 <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js">
-
 </script>
+
 <script type="text/javascript" src="assets/js/main.js">
-
 </script>
+
 </body>
 </html>

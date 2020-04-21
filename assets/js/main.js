@@ -19,9 +19,10 @@ $(document).ready(function(){
     }
   });
 
-});//ready
+}); //ready
 
-// Functions
+//****************************************
+//****************************** Functions
 
 function sendMessage (input) {
 
@@ -45,7 +46,7 @@ var orario = oraAttuale();
   nuovoMessaggio.children('.absolute-time').text(orario);
 
   // Aggiunta nuovo messaggio al contenitore messaggi attivo
-  $('.conversation .message-list').append(nuovoMessaggio);
+  $('.conversation .message-list.active').append(nuovoMessaggio);
 
   //reply message setTimeout
   setTimeout(replyMessage, 1000);
@@ -63,7 +64,7 @@ function addZero(numero){
    return numero;
 }
 
-//setTimmeout
+// setTimmeout
 function replyMessage(messageFriend) {
   //alert("Compare 1 secondo dopo invio di un messaggio altrimenti non va bene");
 

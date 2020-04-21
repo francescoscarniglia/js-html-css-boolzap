@@ -52,6 +52,8 @@ function sendMessage (input) {
   // Aggiunta nuovo messaggio al contenitore messaggi attivo
   $('.conversation .message-list').append(nuovoMessaggio);
 
+  //reply message setTimeout
+  setTimeout(replyMessage, 1000);
   // reset input messaggio
   input.val('');
 
@@ -64,4 +66,9 @@ function addZero(numero){
     numero = '0' + numero;
    }
    return numero;
+}
+
+//setTimmeout
+function replyMessage() {
+  alert("Compare 1 secondo dopo invio di un messaggio altrimenti non va bene");
 }

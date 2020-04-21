@@ -193,7 +193,11 @@ body {
 *************  display single conversation *******
 *********************************************** */
 .app .content-conversation .last-access {
-  flex-basis: 300px;
+  flex-basis: 70%;
+}
+
+.app .content-conversation .last-access p:last-child {
+  padding-top: 4px;
 }
 
 .app .main-conversation .message-list {

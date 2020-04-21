@@ -1,7 +1,8 @@
 $(document).ready(function(){
 
   var messageInput = $('.input-message');
-  var sendIcon = $('.record-message i')
+  var sendIcon = $('.record-message i');
+  var searchInput = $('#search-input');
 
   // Show send message icon on message input focus
 
@@ -19,6 +20,23 @@ $(document).ready(function(){
     }
   });
 
+  // search input
+
+  searchInput.keyup(function() {
+    var search = $(this).val().toLowerCase().trim();
+  //  console.log(search);
+
+    $('.box-conversation').each(function(){
+      var nomeContatto = $(this).find('.conversation-review h3').text().toLowerCase();
+
+      if (nomeContatto.includes(search) ) {
+        $(this).show();
+      } else {
+        $(this).hide();
+      }
+    });
+
+  });
 }); //ready
 
 //****************************************

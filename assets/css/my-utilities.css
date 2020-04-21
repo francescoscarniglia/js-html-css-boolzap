@@ -4,8 +4,6 @@
 
 /************************  colors *********************************/
 
-
-
 .bg-primary {
   background-color: : #429489;
 }
@@ -57,6 +55,12 @@
 .font-size-small {
   font-size: 1em;
 }
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+
 .font-size-18 {
   font-size: 18px;
 }

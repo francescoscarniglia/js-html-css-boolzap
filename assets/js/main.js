@@ -15,7 +15,7 @@ $(document).ready(function(){
 
   messageInput.keypress(function(e){
     if(e.wich == 13 || e.keyCode == 13) {
-      console.log('hai pigiato invio');
+      sendMessage(messageInput);
     }
   });
 
@@ -48,7 +48,7 @@ function sendMessage (input) {
   var orario = ora + ':' + minuti;
 
   nuovoMessaggio.children('.absolute-time').text(orario);
-  
+
   // Aggiunta nuovo messaggio al contenitore messaggi attivo
   $('.conversation .message-list').append(nuovoMessaggio);
 

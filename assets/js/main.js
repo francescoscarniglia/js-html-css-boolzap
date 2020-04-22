@@ -38,9 +38,12 @@ $(document).ready(function(){
 
   });
 
-  // tabs
+  // select friend-conversation
+
   $('.box-conversation').click(function(){
     console.log('hai pigiato su un box conversation');
+    var singleConversation = $(this).attr('data-conversation');
+    console.log('single conversation: ', singleConversation);
   });
 
 }); //ready

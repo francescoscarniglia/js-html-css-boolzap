@@ -3,6 +3,7 @@ $(document).ready(function(){
   var messageInput = $('.input-message');
   var sendIcon = $('.record-message i');
   var searchInput = $('#search-input');
+  var arrowIcon = $('.absolute-arrow');
 
   // Show send message icon on message input focus
 
@@ -55,10 +56,7 @@ $(document).ready(function(){
 
   });
 
-  $('.friends-message').hover(
-       function(){ $(this).addClass('.absolute-arrow active') },
-       function(){ $(this).removeClass('hover') }
-)
+  
 
 }); //ready
 

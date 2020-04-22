@@ -4,6 +4,8 @@ $(document).ready(function(){
   var sendIcon = $('.record-message i');
   var searchInput = $('#search-input');
   var arrowIcon = $('.absolute-arrow');
+  var dropdownActions = $('.dropdown-menu');
+
 
   // Show send message icon on message input focus
 
@@ -56,7 +58,13 @@ $(document).ready(function(){
 
   });
 
-  
+  //arrowIcon
+  arrowIcon.mouseenter(function(){
+    console.log('hai cliccato arrow');
+
+    dropdownActions.toggle(500);
+  });
+
 
 }); //ready
 

@@ -44,6 +44,15 @@ $(document).ready(function(){
     console.log('hai pigiato su un box conversation');
     var singleConversation = $(this).attr('data-conversation');
     console.log('single conversation: ', singleConversation);
+
+    // prima di aggiungere nuovamente active occorre rimuovere la precedente
+    $('.message-list').removeClass('active');
+
+    // prendo il contenitore della singola conversazione e come valore all'interno di data-conversation
+    // inserisco il valore della convers. singola preso prima
+    
+    $('.message-list[data-conversation="' + singleConversation + '"]').addClass('active');
+
   });
 
 }); //ready

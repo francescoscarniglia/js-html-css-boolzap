@@ -38,7 +38,7 @@ $(document).ready(function(){
 
   });
 
-  // select friend-conversation
+  // select single conversation
 
   $('.box-conversation').click(function(){
     console.log('hai pigiato su un box conversation');
@@ -50,7 +50,7 @@ $(document).ready(function(){
 
     // prendo il contenitore della singola conversazione e come valore all'interno di data-conversation
     // inserisco il valore della convers. singola preso prima
-    
+
     $('.message-list[data-conversation="' + singleConversation + '"]').addClass('active');
 
   });

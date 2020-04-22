@@ -213,28 +213,26 @@ body {
 
 .app .main-conversation li {
   max-width: 400px;
+  padding:20px 30px 20px 10px;
+  margin: 10px;
+  border-radius: 10px;
+  list-style: none;
 }
 
 .app .main-conversation li.friends-message  {
-  padding:20px;
-  margin: 10px;
   background: #fff;
-  border-radius: 10px;
-  list-style: none;
   align-self: flex-start;
 }
 
 .app .main-conversation li.your-message {
-  padding:20px;
-  margin: 10px;
   background: #dcf8c0;
-  border-radius: 10px;
-  list-style: none;
   align-self: flex-end;
 }
 
 .app .main-conversation li.friends-message .absolute-time,
-.app .main-conversation li.your-message  .absolute-time {
+.app .main-conversation li.friends-message .absolute-arrow,
+.app .main-conversation li.your-message  .absolute-time,
+.app .main-conversation li.your-message  .absolute-arrow {
 
   font-size: .7em;
   color: rgb(177,177,177);

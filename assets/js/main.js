@@ -55,6 +55,11 @@ $(document).ready(function(){
 
   });
 
+  $('.friends-message').hover(
+       function(){ $(this).addClass('.absolute-arrow active') },
+       function(){ $(this).removeClass('hover') }
+)
+
 }); //ready
 
 //****************************************

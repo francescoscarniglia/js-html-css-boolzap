@@ -149,6 +149,7 @@ body {
 
 .app .sidebar-content .box-conversation {
   border-bottom: .5px solid rgba(0,0,0, .2);
+  cursor: pointer;
 }
 
 .app .sidebar-content .box-conversation:last-child {

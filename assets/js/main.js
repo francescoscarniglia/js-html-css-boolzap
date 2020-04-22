@@ -37,6 +37,12 @@ $(document).ready(function(){
     });
 
   });
+
+  // tabs
+  $('.box-conversation').click(function(){
+    console.log('hai pigiato su un box conversation');
+  });
+
 }); //ready
 
 //****************************************

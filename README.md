@@ -7,4 +7,4 @@
 - jQuery
 
 
-![Desktop](public/images/desktop.gif)
+![Desktop](public/images/desktopBoolZap.gif)
